@@ -1,0 +1,469 @@
+.excerpts-plus {
+  overflow:hidden;
+}
+
+.excerpts-plus .image-display-left,
+.excerpts-plus .image-display-right {
+    max-width:100%;
+}
+
+.excerpts-plus-row { 
+  width:100%;
+  clear:left;
+  float:left;
+  border-bottom: #ddd solid 1px; 
+  z-index:auto!important;
+  max-width:100%;
+}
+
+.excerpts-plus-row-no-border { border-bottom: none; }
+
+
+
+.ep-title-only {margin-bottom:0!important;}
+
+.ep-block-title {
+  width:100%;
+  padding:10px 3px 15px 3px;
+  font-size:20px;
+  /*	background:#444;
+    color:#eee;*/}
+
+.ep-block-title a {
+  /*	color:#eee;*/	text-decoration: none;
+}
+
+.ep-block-title a:hover {
+  text-decoration: underline;
+}
+
+.excerpts-plus-excerpt { 
+  float: left;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 5px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  max-width:100%;
+}
+
+.excerpts-plus-excerpt img.avatar {
+  float: left;
+  margin: 0 5px 0 0;
+  border: none;
+  padding: 0; }
+
+.excerpts-plus-excerpt a.more-link { float: right !important; }
+
+
+div.excerpt-big-image { 
+  width:100%;
+  overflow:hidden;
+  margin-bottom:10px; }
+
+div.excerpt-image {
+  padding:0 2px 2px 2px;
+  display:inline-block; }
+
+div.ep-image-caption {
+  font-size:10px;
+  display:block;
+}
+
+div.excerpt-heading {
+  width:100%;
+  margin-bottom:0;}
+
+div.excerpt-content {line-height:150%;margin-top:0!important;}
+
+
+div.ep-nav {
+  padding:5px;
+  border-radius:3px;
+}
+
+div.ep-nav a {
+  text-decoration: none;
+}
+div.ep-nav a:hover {
+  text-decoration: underline;
+}
+div.excerpts-plus-excerpt .excerpt-title { 
+  width: auto; /* This had something to do with image in title... */
+  display: inline-block; }
+
+div.excerpts-plus-excerpt .excerpt-title-image-right { margin-left: 5px; clear:left;}
+div.excerpts-plus-excerpt .excerpt-title-image-left { margin-right: 5px; clear:right;}
+div.excerpts-plus-excerpt .excerpt-title-image-center { text-align:center; clear:both;width:100%;}
+
+div.excerpts-plus-excerpt .excerpt-title .entry-title { 
+  float: left;
+  display: inline-block;
+  padding-bottom: 0px;
+}
+
+div.excerpts-plus-excerpt .excerpt-title .entry-title a { 
+  line-height: 110%;
+  padding-right:10px;
+	display: inline-block;
+}
+
+div.excerpts-plus-excerpt .excerpt-title-image-center .excerpt-title .entry-title { text-align:center; clear:both;width:100%!important;float:none!important;}
+div.excerpts-plus-excerpt .excerpt-title-image-center .excerpt-title .entry-title a {padding:0!important}
+
+div.excerpts-plus-excerpt .excerpt-title .entry-meta {
+  display: inline-block; 
+  clear: left; 
+  float: left;
+  width: 100%;
+}
+div.ep_meta1_left,
+div.ep_meta2_left,
+div.ep_meta3_left
+{
+  float:left;
+  display:block;
+  text-align: left;
+}	
+div.ep_meta1_right,
+div.ep_meta2_right,
+div.ep_meta3_right
+{
+  float:right;
+  display:block;
+  text-align: right;
+}	
+
+.ep-cell-footer {
+  overflow:hidden;
+  padding:0 5px;
+}
+
+span.excerpt-title-bullet {
+  font-weight:bold;
+}
+
+h2.ep-cats-shown, 
+h2.ep-author-shown 
+{margin-bottom: 10px;padding-bottom:5px;font-size: 21px;border-bottom: #ddd solid 1px;}
+
+div.excerpt-linkto {float:right;}
+
+div.excerpts-plus-excerpt .entry-meta { margin-bottom:0;}
+
+div.excerpts-plus-excerpt .hentry { clear: both; padding: 10px 0 0 0;}
+
+/* Had added a clear:both here for some reason but that stopped images wrapping */
+div.excerpts-plus-excerpt div.excerpt-content p {width:inherit;height:100%;}
+
+div.excerpts-plus-excerpt .image-display-left { padding:0 2px 2px 2px; margin-right:10px;}
+div.excerpts-plus-excerpt .image-display-center { padding:2px 2px 2px 2px; margin-left:10px; margin-right:10px;float:none!important;text-align:center;clear:both;}
+div.excerpts-plus-excerpt .image-display-right { padding:0 2px 2px 2px; margin-left:10px;}
+
+div.excerpts-plus-image-show-border {border:#ccc solid 1px;padding:5px!important;}
+
+div.ep-errors {color:#8A1F11;background:#FBE3E4;border:#fbc2c4 solid 1px;padding:3px;clear:left;margin-bottom:10px;}
+
+/* Stuff For Excerpts Behind */
+div.excerpts-plus-excerpt-behind { 
+  position: relative;
+  color: #eee !important;
+  overflow: hidden; 
+}
+
+
+div.ep-cell-content-underlay {position:absolute;height:100%;width:100%;left:-5px;} /* -5px to compensate for padding */
+
+div.excerpts-plus-excerpt-behind .excerpt-heading {
+  z-index: 2;
+  position: relative;
+  padding: 12px;
+  margin: 0; 
+}
+
+div.excerpts-plus-excerpt-behind .tint-bg 
+{padding:5px;margin:0;}
+
+div.excerpts-plus-excerpt-behind .tint-80 
+{background:url(../media/images/tint-80.png);padding:5px;margin:0;}
+
+div.excerpts-plus-excerpt-behind .tint-70 
+{background:url(../media/images/tint-70.png);padding:5px;margin:0;}
+
+div.excerpts-plus-excerpt-behind .tint-60 
+{background:url(../media/images/tint-60.png);padding:5px;margin:0;}
+
+div.excerpts-plus-excerpt-behind .tint-50 
+{background:url(../media/images/tint-50.png);padding:5px;margin:0;}
+
+div.excerpts-plus-excerpt-behind .tint-40 
+{background:url(../media/images/tint-40.png);padding:5px;margin:0;}
+
+div.excerpts-plus-excerpt-behind .tint-30 
+{background:url(../media/images/tint-30.png);padding:5px;margin:0;}
+
+div.excerpts-plus-excerpt-behind .tint-20 
+{background:url(../media/images/tint-20.png);padding:5px;margin:0;}
+
+div.excerpts-plus-excerpt-behind .tint-10 
+{background:url(../media/images/tint-10.png);padding:5px;margin:0;}
+
+div.excerpts-plus-excerpt-behind .tint-00 
+{background:transparent;padding:5px;margin:0;}
+
+/* 	changed to squeeze down spacing */
+div.block-type-excerpts-plus .hentry.excerpt-entry.entry-content  { margin:0px 0;}
+
+/*	div.excerpts-plus-excerpt-behind .hentry {
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    }
+    
+  
+    div.excerpts-plus-excerpt-behind .hentry .excerpt-content { padding: 7px 7px 0px; }
+
+    div.excerpts-plus-excerpt-behind .hentry .entry-meta { padding: 1px 7px 7px; }
+    
+    div.excerpts-plus-excerpt-behind .hentry p { margin: 0 0 7px 0; }
+*/		
+
+div.excerpts-plus-excerpt-behind .entry-meta, 
+div.excerpts-plus-excerpt-behind .entry-title,
+div.excerpts-plus-excerpt-behind .entry-title h2,
+div.excerpts-plus-excerpt-behind .excerpt-content,
+div.excerpts-plus-excerpt-behind .excerpt-content p
+{width:100%;}
+
+div.excerpts-plus-excerpt-behind .excerpt-title .entry-title { padding:0; }
+
+
+div.excerpts-plus-excerpt-behind .entry-meta, 
+div.excerpts-plus-excerpt-behind .entry-title { 
+  color: #eee !important;
+  padding-right: 5px;
+  margin: 0 0 0px; }
+
+div.excerpts-plus-excerpt-behind a { color: #eee !important; }
+
+div.excerpts-plus-excerpt-behind .no-image .entry-meta, 
+div.excerpts-plus-excerpt-behind .no-image .entry-title,
+div.excerpts-plus-excerpt-behind .no-image a,
+div.excerpts-plus-excerpt-behind .no-image p
+{ 
+  color: #222 !important;}
+
+
+.pzep_image {
+  max-width:100%;
+  box-sizing:border-box;
+}
+
+
+div.excerpts-plus-excerpt-behind img.pzep_image.excerpts-plus-image-behind {
+  /*		position: absolute;
+      z-index: 1; */
+  padding:0;
+ /* width:100%; */
+	max-width:none;
+}
+
+div.ep-show-border-content,
+div.ep-show-border-title {
+  border: #ccc solid 1px;
+  padding: 2px 2px 0 2px!important;
+}
+
+/* This covers for image in structure */
+div.ep-show-border-none  img
+{
+  border: #ccc solid 1px;
+  padding: 2px;
+  /*	width:94%;
+    height:94%;*/
+}
+
+div.ep-cell {
+  z-index: 1;
+  background: transparent;
+  position:relative;
+  overflow:hidden;
+  width:100%; 
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+
+div.ep-cell-container {
+  float:left;
+  width:100%;
+  position: relative;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+div.ep-cellrow1,
+div.ep-cellrow2, 
+div.ep-cellrow3,
+div.ep-cellrow4, 
+div.ep-cellrow5 {
+  position: relative;
+  z-index: 2;
+  width:auto;
+  /*Need to verify this doesn't affect anything else! */
+  overflow:hidden;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+div.ep-cellcol1,
+div.ep-cellcol2 {
+  float:left;
+}	
+div.ep-cellcol3 {
+  float:right;
+}
+
+
+div.valign-bottom {position:absolute;bottom:0;}
+div.valign-top, div.valign- {position:absolute;top:0;}
+
+
+
+/* SLIDER CSS */
+.slider {}
+/* work on this
+.slider:after,
+.slider-nav-defaults:before {
+	content:" ";
+	display:table;
+}
+*/
+.slider-slide {}
+
+.slider-nav-defaults  a { margin: 0 2px; padding: 3px 2px; text-decoration: none;font-weight:bold;color:#bbb;}
+.slider-nav-defaults  a.activeSlide { color:#222;}
+.slider-nav-defaults  a:focus { outline: none; }
+.slider-nav-defaults { text-align: center;color:#999;padding:3px;margin-top:10px;}
+
+.slider-bullets {font-size:30px;padding:0;font-family: Arial,Helvetica,sans-serif;}
+.slider-numbers {font-size:16px;font-style: italic;}
+
+.slider-bglight a {color:#bbb;}
+.slider-bglight a.activeSlide {color:#222;}
+
+.slider-bgdark a {color:#555;} 
+.slider-bgdark a.activeSlide {color:#eee;}
+
+.slider-nav-thumbs li {display:inline;padding:0}
+.slider-nav-thumbs {text-align:center;}
+.slider-nav-thumbs a {border:transparent solid 2px;padding:1px;display: inline-block;}
+.slider-nav-thumbs a.activeSlide {border:#777 solid 1px;padding:1px;}
+
+
+
+.slider-thumb {padding:0 3px;}
+
+/* quick read */
+div.wrapper a.ep_quickread {
+  background:#f7f7f7;
+  border:#d2d2d2 solid 1px;
+  padding:3px 5px 4px 5px;
+  border-radius:4px;color:#999;
+  text-decoration:none;
+  margin:5px 0;
+  display: inline-block;
+  font-size: 90%;
+}
+div.wrapper a.ep_quickread:hover {color:#fff;background:#555;}
+
+div#quickread {display:none;}
+div.qr-title,
+div.qr-content,
+div.qr-code {clear:both;}
+
+p.ep-pzsp-removed {font-style: italic;background-color: #eee;padding:3px 5px 5px;display:inline-block;}
+
+/* Extra stuff */
+.ep-sticky-post {}
+
+.ep_rtfm {font-weight:bold;color: #c00;}
+
+div.block-type-excerpts-plus div.nav-next {float:right;}
+div.block-type-excerpts-plus div.nav-previous {float:left;}
+
+.pzep-bullet-type-thumb32 {
+  display: inline-block;
+  overflow: hidden;
+  height: 32px;
+  vertical-align:-8px;
+}
+
+.pzep-bullet-type-thumb48 {
+  display: inline-block;
+  overflow: hidden;
+  height: 48px;
+  vertical-align:-16px;
+}
+
+.pzep-bullet-type-thumb64 {
+  display: inline-block;
+  overflow: hidden;
+  height: 64px;
+  vertical-align:-24px;
+}
+
+.pzep-bullet-type-thumb32.pzep-thumb-circle {
+  border-radius: 32px;
+}
+
+.pzep-bullet-type-thumb48.pzep-thumb-circle {
+  border-radius: 48px;
+}
+.pzep-bullet-type-thumb64.pzep-thumb-circle {
+  border-radius: 64px;
+}
+
+
+.block-type-excerpts-plus .featured-entry-content {
+  clear:both;
+}
+
+pre {
+  line-height: 1.5;
+}
+
+.pzep-cleardiv {
+  clear:both;
+}
+
+.block-type-excerpts-plus .wp-pagenavi {line-height:180%;padding:5px 0;}
+
+.ep_custom_field_prefix_image,
+.ep_custom_field_suffix_image {vertical-align:middle;}
+
+/* RESPONSIVE DESIGN */
+
+/* Laptop/Tablet (1024px) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* Tablet Portrait (768px) */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: portrait) {
+  .excerpts-plus-excerpt {width:100%!important}
+}
+
+/* Phone Landscape (480px) */
+@media only screen and (min-width: 321px) and (max-width: 480px) and (orientation: landscape) {
+  .excerpts-plus-excerpt {width:100%!important}
+}
+
+/* Phone Portrait (320px) */
+@media only screen and (max-width: 320px) {
+  .excerpts-plus-excerpt {width:100%!important}
+}

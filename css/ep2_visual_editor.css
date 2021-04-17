@@ -1,0 +1,7 @@
+/* Set the tabs bar and panel to scroll in the VE if necessary*/
+div.panel-block-type-excerpts-plus ul.sub-tabs {overflow-y:auto;}
+/* Removed coz caused pop-ups to be cut off */
+/*div.panel-block-type-excerpts-plus div.sub-tabs-content {overflow-y:auto;padding-left:20px;}*/
+div.panel-block-type-excerpts-plus div.sub-tabs-content div.input {margin: 0 8px 6px 0!important;}
+div.panel-block-type-excerpts-plus p.sub-tab-notice {margin-bottom:8px!important;}
+

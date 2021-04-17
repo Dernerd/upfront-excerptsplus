@@ -1,0 +1,412 @@
+CHANGELOG
+=========
+
+3.4.3  9-Feb-2014
+------------------
+* ADDED: Option to exclude posts with specified tags. Does not work if a category is selected for inclusion. This may be a WP limitation.
+* ADDED: Rounded corners option to images in VE Design Editor
+* CHANGED: When WPML is active, will display featured image from the parent post if the translation doesn't have one.
+* FIXED: %readmorestr% or part of showing in some excerpts
+* FIXED: Performance issue caused by trying to load missing unused jQuery file!
+* FIXED: Corners option not showing in VE Design Editor
+
+3.4.2 : 27-Nov-2013
+FIXED: Quickread not working when settings left on defaults
+FIXED: Quickread not showing tinted background
+FIXED: Quickread zapping SliderPlus on pages
+
+3.4.1 : 14-Nov-2013
+ADDED: Design Mode styling option for paragraphs in custom fields.
+ADDED: ep_before_loop_start hook. Useful for displaying things like WP-PageNavi atthetop of the block.
+ADDED: Options to change meta text for comments
+
+CHANGED: Major reorganisation of Visual Editor settings to improve workflow and usability. See here for overview of changes: http://guides.pizazzwp.com/excerptsplus/excerptsplus-v3-4-tab-layout-changes/
+
+FIXED: Missing margins options from Design Mode
+FIXED: A few minor notice messages
+FIXED: Sort ordering not being applied to archive views.
+FIXED: Slider not sliding
+
+3.4.0 : 29-Oct-2013
+ADDED: Option to override the "Full width content" to show as excerpts.
+ADDED: Option to 'Always show read more text'
+ADDED: A class .ep-any-sticky-post that will apply to any sticky post, regardless of the "Stickies First" setting.
+ADDED: WP-Updates support for non-UpFront sites
+
+CHANGED: Using new date query methods for date filtering.
+CHANGED: Image processing memory limit now WP_MAX_MEMORY_LIMIT to match WordPress.
+CHANGED: Switched to WP's function for creating file paths for creating the cache path.
+CHANGED: Order of tabs on Visual Editor
+CHANGED: Now using wp_trim_words for trimming excerpt by words.
+CHANGED: Removed WP post fields from custom fields drop down
+CHANGED: Image widths when image behind to improve responsive behaviour. Images should now maintain 100% height, rather than 100% width.
+This is to stop the gap opening between text and images but does mean images will crop on smaller screens and will not fill cell width if smaller than the cell width if the cell width changes to larger, eg. 25% to 100%.
+CHANGED: jQuery Cycle naming to cycle1 to remove conflict with Cycle2 plugins
+
+FIXED: Missing line breaks in WYSIWYG custom fields
+FIXED: Caption to show when image is in the title
+FIXED: Caption not showing for featured images that weren't originally attached to the current post.
+FIXED: Some sites add gumpf after the file extension, which was causing cache images to not be created as E+ couldn't recognize the extension.
+FIXED: Custom field showing groups 1 for all groups
+FIXED: Focal point not working with attached/embedded images
+FIXED: Strange alignments with entry titles when padding or margins added in Design Mode. Something had made the linked titles inline instead of inline-block.
+FIXED: No content showing from pre-3.1.1 E+ blocks displaying custom post types
+FIXED: Custom fields showing unformatted
+
+3.3.1: 15 Aug-2013
+FIXED: Warnings on front end about array issue when PHP warnings enabled
+
+3.3.0 : 14-Aug-2013
+ADDED: Methods to display custom fields. See under Structures to set it, and the Custom Fields options to control what is shown.
+FIXED: Date filtering problem when relative dates used (e.g. Today, yesterday, last week) as PHP by default uses UTC 0 time.
+FIXED: Subsequent E+ blocks on a single post page would show no content if set to use single page behaviour
+
+3.2.1 : 28-July-2013
+FIXED: Content type not remembering settings from pre-E+ 3.1
+FIXED: Several PHP notices for undefined index
+FIXED: Cache images being recreated unnecessarily
+FIXED: PNG transparency not being preserved
+
+CHANGED: Excerpts now break at a WP "more" tag if within the trim limit.
+CHANGED: Several slider-based options controls to text
+
+ADDED: Option in the filters to use the WP timezone setting
+ADDED: Option to override categories via query string. Usage /?catid=NNN where NNN = category ID to display.
+ADDED: Options to filter posts using custom fields in Developer options.
+ADDED: Options to sort posts using custom fields in Developer options
+ADDED: Option (in Behaviours tab) to use WP-PageNavi if available
+ADDED: Settings in design mode to stylize WP-Pagenavi
+ADDED: Option to use original image  with no cropping or resizing. Image will still scale responsively to fit the cell. Use with care though as using large images will slow page loads.
+
+3.2.0 : 04-May-2013
+ADDED: Option to slide content into view on mouseover when the image is set to behind.
+
+CHANGED: "Single page behaviour" option off by default
+CHANGED: Switched to percentage calculations to improve responsive design.
+
+UPDATED: Pizazz Libs v1.3.5 which, among other fixes and updates, provides a Support button on the PizazzWP menu screen
+
+3.1.3 : 
+ADDED: Option to display UpFront's Alternative Titles. On by default.
+ADDED: Class to titles for when set to excerpt first, then list.
+ADDED: Option to show an image in the ExceptsPlus block title.
+ADDED: Error checking if image cache is writable.
+ADDED: Option to choose how many excerpts to show before showing title list
+ADDED: Option to use Respect Focal Point. On by default
+ADDED: Option for Automatic ellipsis
+ADDED: Method option to hide the block when no results
+
+FIXED: Option to show page children not showing
+FIXED: Image fill color not working
+FIXED: CSS conflict with Gravity in jQueryUI
+FIXED: Meta fields were adding 0.1sec to each post displayed which adds up if you have several E+ blocks on a page
+FIXED: Other performance optimization
+FIXED: Background color on text are not working when image behind with new HW colorpicker
+FIXED: Image captions not showing
+FIXED: More speed improvements
+FIXED: Scripts load only when required
+FIXED: Days to show as it was showing an extra day.
+
+
+CHANGED: Added link for current version on PizazzWP menu screen
+CHANGED: Added message in PizazzWP menu screen when Pizazz updates server not available
+CHANGED: Removed override that made excerpts then list always show row borders
+CHANGED: Increased cell gap option to 40
+
+
+
+3.1.2 : 1-Feb-2013
+FIXED: 3.1.1 made blocks say no posts found
+FIXED: Contents tab hidden in VE if Content not selected in structure (still needed for other things)
+FIXED: Content types not staying selected
+
+3.1.1 : 31-Jan-2013
+FIXED: E+ could lose track of selected custom post types if CPTs were added or removed to the system
+FIXED: Various PHP notices and warnings
+FIXED: Pages showing post instead of page content. 
+
+Please check "Single Post Behaviour" and "Force Front Page" are set to display the correct content on each of your ExcerptsPlus block. If not, unexpected content may display.
+
+3.1.0 : 16-Jan-2013
+ADDED: Option to change Quick Read button label
+ADDED: Date filters to only show posts from a given time frame. Per request by request by Kate M
+ADDED: Lots of intelligence to only show settings as required. e.g. Content tab only when content is selected for display.
+ADDED: Option to set title colour when image behind. Kanbanerry task ID: #624195
+ADDED: Option to set body colour when image behind.
+ADDED: Option to choose to use excerpt trimming or not.
+ADDED: Styling for visited links in Design Editor
+ADDED: Version change info to Help tab
+
+CHANGED: Text of "Number to show full width" to "Number to show full content and width" to accurately reflect what it does.
+CHANGED: Loading of various functions to only occur when needed, especially the update checker, to improve front-end performance.
+CHANGED: Moved Cell align when Image Behind to Image tab
+CHANGED: Merged Images and Image Sizing tabs
+CHANGED: Moved Skip Posts to Filters tab
+
+FIXED: Content not displaying on archive pages when specific content. Kanbanerry task ID: #624304
+FIXED: Excerpts not being trimmed when longer than Excerpt Length setting
+FIXED: Styled excerpts not showing line breaks
+FIXED: Read more and truncation characters to show correctly
+
+3.0.1 : 14-Dec-2012
+CHANGED: Cells to internally use percentage widths to improve responsive layout
+ADDED: Cell footer as an extra structure area below each cell
+ADDED: Advanced styling for Cell Wrapper
+ADDED: Meta 3 fields
+UPGRADED: Pizazz libs 1.3.3 with extra Pizazz Options menu
+FIXED: Duplicate display of captions
+
+3.0.0 : 29-Nov-2012
+ADDED:   Hooks ep_top_of_block and ep_bottom_of_block
+ADDED:   Custom fields displayable via meta using %customfieldname%
+ADDED:   A simplified function to get a custom field value which can be used in hooks: ep_get_custom_field($ep_cf_name)
+ADDED:   Option to show image captions
+ADDED:   Scaling options to image resizing
+ADDED:   'Behaviours' options tab
+ADDED:   Option to filter by custom taxonomies
+ADDED:   Option to filter by tags
+ADDED:   Extra options for display of meta info on right of excerpts
+ADDED:   Multi-select of Content types
+ADDED:   Option to force default behaviour on results pages
+ADDED:   Styling settings in Design Editor for Page Navigation link
+ADDED:   Pagination text options
+
+CHANGED: Various margins and paddings on content and headings to reduce gaps
+CHANGED: Image borders are around the image container div, not just the image
+CHANGED: Images displaying with box-model to slightly improve responsive layout
+CHANGED: Moved some options to different tabs
+CHANGED: Version number to reflect major updates - and of course, ran out of numbers.
+CHANGED: Titles options tab to Titles & Text
+CHANGED: Moved Link To setings to Titles & Text tab
+
+
+FIXED:   Blank paragraph at top of excerpts
+FIXED:   Image display logic tests when image in content and set to show
+FIXED:   Scaled images to not exceed their actual size
+FIXED:   All categories showing on category archive page when category had no entries
+FIXED:   ExcerptsPlus blocks on search result pages will display search results
+FIXED:   Defaults to posts if no content type selected
+FIXED:   Block link-to not showing
+FIXED:   Actual excerpts not being used when available
+FIXED:   Go to link message to include space before post title
+FIXED:   Archives display to show content
+FIXED:   64px circular thumbs not working
+
+2.9.18 : 5-Sep-2012
+ADDED: Method to use Pizazz update checker if required
+
+2.9.17 : 4-Sep-2012
+FIXED: Warnings on some sites
+
+2.9.16 : 1-Sep-2012
+ADDED: cell-no-n class to ep-cell divs
+ADDED: Row gap option in Block Layout [http://d.pr/i/yCcy]
+ADDED: Option to show/hide display of featured thumb when full content being displayed (under Images options) [http://d.pr/i/oBqp]
+ADDED: Extra bullet in title options off thumbs, sizes 32, 48 and 64px. [http://d.pr/i/DhdB]
+REMOVED: Cell padding setting from Block Layout options. Use VE Design Mode instead
+CHANGED: Adjustment factor for padding in content area when image behind to -20
+CHANGED: Cells etc to use box-sizing method
+FIXED: Layout issues when image behind
+FIXED: Images not clickable when image behind
+FIXED: Cell rows hiding links
+FIXED: Excerpts not able to be displayed longer than WP excerpt length setting
+UPDATED: Pizazz libs v1.3.0
+
+
+2.9.15 : 15-Aug-2012
+CHANGED: User guide link
+CHANGED: "Number to show" limit increased to 100 [http://d.pr/i/SwSk]
+FIXED: Performance issues
+FIXED: Styled excerpts showing truncation info. No longer affected by truncation at all
+FIXED: Transparency not preserved in transparent PNGs
+
+
+2.9.14 : 3-Aug-2012
+FIXED: Filtering not working. Needed stricter checking === rather than ==
+
+2.9.13 : 31-Jul-12
+FIXED: Manual updater getting wrong file name
+
+2.9.12
+UPDATED: Pizazz libs v1.2.11
+
+2.9.11.1208 : 16-Jul-2012
+UPDATED: Pizazz libs to 1.2.08
+ADDED: Message and link in PizazzWP info page when update available
+ADDED: Padding options to Design Mode elements
+CHANGED: Box adjustment is now in Layout options 
+
+2.9.10.1206 6-Jul-2012
+FIXED: Quick read CSS missing [ep2_display.php]
+ADDED: Quick read formatting to Design mode [ep2_display.php, excerpts_plus2.css]
+ADDED: Image border styling to Design Mode [ep2_display.php]
+ADDED: Option for fixed height cells when displaying excerpts [ep2_options.php, ep2_display.php]
+
+2.9.9-1206 4-Jul-2012
+CHANGED:	Margin above bullets is now 10px [excerpts_plus2.css]
+CHANGED:	Added max-width to excerpt row. [excerpts_plus2.css]
+UPDATED: Libs to 1.2.06
+
+2.9.8 : Jun-2012
+CHANGED: Cache location is now wp-content/uploads/cache/pizazzwp/eplus
+UPDATED: PizazzWP libs to v1.2.4
+
+2.9.7 : 15-Jun-2012
+UPDATED: Pizazz libs with BackupBuddy 3 compatibility fix
+
+2.9.6 : 14-Jun-2012
+CHANGED: Support links to UpFront forums [ep2_block_options.php]
+
+2.9.5 : 13-Jun-2012
+FIXED:   Quickread code not hidden on pages without ExcerptsPlus block [ep2_functions.php]
+CHANGED: Cache flush from save_post to post_updated [pzexcerptsplus.php]
+CHANGED: Removed ExcerptsPlus version check [pzexcerptsplus.php]
+FIXED:   Full width not working when same as number across [ep2_display.php]
+FIXED:   Full width css calculation [ep2_display.php]
+CHANGED: Update function for further HW copatibility [pzexcerptsplus.php]
+CHANGED: Renamed main file and folder
+
+2.9.4
+CHANGED: UpFront auto updater routine [pzexcerptsplus.php]
+
+2.9.3
+ADDED:   UpFront marketplace compatibility [pzexcerptsplus.php]
+FIXED:   Double image display if location set to behind and image set in structure [ep2_display.php]
+
+2.9.2
+ADDED:		Option to display relevant post when used on a single post page
+FIXED:		Removed unnecessary ellipses on full post displays
+CHANGED:	Upgraded to jQuery Cycle 2.9999.5
+
+2.9.1
+FIXED:		Missing author's gravatar
+CHANGED:	Tidied up Quickread button
+FIXED:		Quick read formatting
+FIXED:		Layout issues with embedded SliderPlus sliders.
+
+2.9.0
+ADDED:		Pizazz as a library
+ADDED:		WP auto update
+FIXED:		Hooks parameters to be syntaxically correct
+FIXED:		Guide and support path
+
+2.8.2
+- ADDED:		Toss transition. Best used with full background images
+- CHANGED:	Reinstated post reset at end of processing
+- CHANGED:	Updated to jQuery Cycle 2.9999.3
+- CHANGED:	Made cycle parameter height = image height when image behind else block height.
+- FIXED:		"Don't link" option was being ignored
+- FIXED:		Slow page loads (get_settings() in init_action)
+- FIXED: 		pizazzwp.com link in Help
+
+2.8.1
+- ADDED:	Option to override category on category archive page
+- FIXED:	Title sorting
+
+2.8.0
+- FIXED:	QuickRead working again!
+
+2.7.2
+- ADDED:	PizazzWP integration 
+- FIXED:	Bug where no content showing when image behind.
+
+2.7.1
+- ADDED:	Advanced Styling options for custom CSS
+- ADDED:	More design editor elements
+- ADDED:	Block title option
+
+2.7.0
+- ADDED:	CSS elements to the VE Design editor for Excerpt Cell, Title, Meta, Content and Read More
+- ADDED:	Options for cell padding and gap
+- CHANGED:	Greatly improved cell width calculations. Now logical box model and allows for box shadows 
+- CHANGED:	In layout options, Number Across and Number to Show are now sliders
+- CHANGED:	Moved 'Number to show full width' and 'Use pagination' to under the Layout options
+- ADDED:	Help panel with version number, link to user guide, changelog and with an option debug info display
+- ADDED:	Option for date format in Meta info
+
+2.6.6
+- ADDED:	Developer menu in options panel with customizable field for permalink Rel and Class
+
+2.6.5
+- FIXED:	Date displaying as time since HW 3.0.5
+
+2.6.4
+- ADDED:	For developers, added hooks: 
+				ep_before_title; ep_after_title; 
+				ep_before_meta1; ep_after_meta1; 
+				ep_before_meta2; ep_after_meta2;
+				ep_before_image; ep_after_image;
+				ep_before_content; ep_after_content;
+				ep_before_cellrow1; 
+				ep_after_cellrow1; ep_after_cellrow2; ep_after_cellrow3; ep_after_cellrow4; ep_after_cellrow5
+- ADDED:	Hooks options panel for easy coding for the above hooks.
+- FIXED:	Refresh image cache error
+- FIXED:	Excerpts not being processed properly - e.g. length ignored
+
+2.6.3
+- ADDED:	Check for pluscache and message if not existing
+- FIXED: 	Missing vertical crop alignment option
+- ADDED:	Image cache clearing on save in VE (HW 3.0.5 and above only)
+- FIXED:	Some places where leaf was used instead of block.
+
+2.6.2
+- FIXED:	Update message causing errors on some sites
+- CHANGED:  Made options in VE options panel closer together
+- CHANGED:	Split Image options into two panels
+
+v2.6.1
+- ADDED: Activation check for HW3
+- FIXED: Category selection not working right
+
+v2.6.0
+- CHANGED: Version number for something more significant since is now a block - to lessen confusion with the leaf
+- FIXED:	Fixed up $layout parameters that Clay removed :P
+- CHANGED:	Removed from beta
+
+2.3.3
+ADDED:		Option for maximum image dimensions
+FIXED:		Will process jpg, png and gifs now, so no failure on others.
+FIXED: 		Quick read goto URL
+CHANGED:	Saving posts or pages will empty the image cache for that post/page so no need to manually refresh cache
+CHANGED:	Help info on pagination option to warn about WP bug with home page set to static page.
+
+2.3.2
+ADDED:		Image size management (extends PHP Mem)
+ADDED:		Margins class to excerpts cells (inner-right and outer-right)
+
+2.3.1
+FIXED:		Version checking fail when PHP less than 5.3
+FIXED:		Header error. Moved version msg
+
+2.2.6 to 2.3.0 Change log
+ADDED:		Version checking
+ADDED:		Quick read button and popup
+ADDED:		Option to set background colour of title tint
+ADDED:		Support for styled excerpts (using plugin such as TinyMCE Excerpt)
+ADDED:		Option to trim by characters or words
+ADDED:		Option to choose excerpt truncation character (Ellispes, Arrows, none)
+ADDED:		Image quality
+ADDED:		Menu options under tools for Excerpts+ Tools withj Refresh Excerpts+ Image Cache on it.
+ADDED:		Additional cropping options - Horizontal alignment, Crop style, Fill colour
+ADDED:		Tint override for IE8 or less
+
+CHANGED:	Changed link to User Guide to online page
+CHANGED:	Moved title and content tint options under titles
+CHANGED:	Cache to pluscache
+CHANGED:	Add clear cache on deactivate
+CHANGED:	Truncation character will only show when showing truncated excerpts
+CHANGED:	Blanking the Read More text will no longer hide the truncation character.
+CHANGED:	Merged image processing into ep2_functions and added latest changes from G+
+CHANGED:	Relocated User Guide to AmazonS3
+CHANGED:	included path to functions.php to avert NGG conflict
+
+FIXED:		Small prob when cropping type unspecified - prob only affects when installing update
+FIXED:		Image size probs on other pages when page nav on. Yup! Setup image cache clearing when saving in VE. Useful in G+ too!
+FIXED:		Remove background in titles when no image
+FIXED: 		Add padding when image behind to titles etc
+FIXED:		Quick read not working unless other E+ js active. Injected into footer
+FIXED:		Quick Read not working on localhost- *blush* Forgot to put the HTML in :S
+FIXED:		Text gone missing from align bottom :S
+FIXED:		Superfluous error message when images not found but then created such as new HW install
+FIXED:		All categories problem
+FIXED:		Removed 100% height on ep-cell so behind images can be clicked
